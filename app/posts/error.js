@@ -5,7 +5,7 @@ import { useEffect } from "react";
 const error = ({ error, reset }) => {
 	useEffect(() => {
 		console.log(error);
-	}, [error]);
+	}, []);
 
 	return (
 		<>
