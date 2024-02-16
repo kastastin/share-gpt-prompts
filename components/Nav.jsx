@@ -49,7 +49,7 @@ const Nav = () => {
 								alt="Profile"
 								width={37}
 								height={37}
-								className="rounded-full"
+								className="rounded-full cursor-pointer"
 							/>
 						</Link>
 					</div>
@@ -71,7 +71,7 @@ const Nav = () => {
 			</div>
 
 			{/* Mobile navigation */}
-			<div className="sm:hidden flex relative">
+			<div className="sm:hidden flex relative justi">
 				{session?.user ? (
 					<div className="flex">
 						<Image
@@ -80,7 +80,7 @@ const Nav = () => {
 							width={37}
 							height={37}
 							onClick={() => setToggleDropdown((prevState) => !prevState)}
-							className="rounded-full"
+							className="rounded-full cursor-pointer"
 						/>
 
 						{toggleDropdown && (
